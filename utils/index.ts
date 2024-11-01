@@ -16,7 +16,7 @@ export async function fetchCars<T>(url: string): Promise<FetchResponse<T>> {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "x-rapidapi-key": process.env.NEXT_PUBLIC_API_KEY as string,
+        "x-rapidapi-key": process.env.NEXT_API_KEY as string,
         "x-rapidapi-host": "cars-by-api-ninjas.p.rapidapi.com",
       },
       cache: "no-cache",
